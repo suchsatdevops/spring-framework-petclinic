@@ -23,7 +23,7 @@ pipeline {
       steps {
         sh '''
             aws s3 cp s3://suchsatbucket/petclinic-$BUILD_NUMBER.war .
-            scp petclinic-$BUILD_NUMBER.war root@10.0.59.137:/opt/tomcat/webapps/petclinic.war
+            scp petclinic-$BUILD_NUMBER.war root@10.0.59.137:/opt/tomcat/webapps/
         '''
       }
     }
